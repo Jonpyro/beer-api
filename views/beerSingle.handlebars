@@ -1,0 +1,28 @@
+<main class="main main-beer-single container">
+    <section class="section section-single">
+        <div class="row d-flex justify-content-between">
+            <div class="col-md-6">
+                <figure class='text-center'>
+                    <img src="{{data.image}}" alt="{{name}}" class="img-fluid single-img">
+                    <figcaption class="figcap">
+                        <h5 class="single-header">{{name}}</h5>
+                        <p>Price:{{data.price}}</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-6 d-flex flex-row-reverse">
+                <aside class="aside">
+                    <h5 class="text-end single-header">Ratings:</h5>
+                    <ul class="list-group single-ul">
+                        <li class="list-group-item single-li">
+                            <p>Avarage: {{data.rating.average}}</p>
+                        </li>
+                        <li class="list-group-item single-li">
+                            <p>Reviews: {{data.rating.reviews}}</p>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </section>
+</main>

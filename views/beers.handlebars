@@ -1,0 +1,15 @@
+<main class="main beer-main container">
+    <section class="section container">
+        <div class="row">
+            {{#each data}}
+                <div class="col-md-3 text-center">
+                    <a href="/beers/{{id}}">
+                    <img src="{{image}}" alt="{{name}}" class="img-fluid">
+                    <h4>{{name}}</h4>
+                    </a>
+                    <p>{{price}}</p>
+                </div>
+            {{/each}}
+        </div>
+    </section>
+</main>
